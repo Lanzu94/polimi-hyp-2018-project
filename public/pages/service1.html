@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>HealthService</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="//code.jquery.com/jquery-1.10.2.js"></script>
+	<link rel="stylesheet" type="text/css" href="../assets/css/index.css">
+
+
+	<script>
+		$(function () {
+			$("#header").load("./header.html");
+		});
+	</script>
+	<script>
+		$(function () {
+			$("#footer").load("./footer.html");
+		});
+	</script>
+</head>
+
+<body>
+	<div id="header"></div>
+	<div class=" row">
+		<div id="side" class="col-xs-12 col-sm-2 col-lg-2">
+			<ul id="sidebar" class="nav nav-stacked">
+				<li>
+					<a href="#">
+						<b>NEWS</b>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<b>EVENTS</b>
+					</a>
+				</li>
+				<li>
+					<a href="./projects.html">
+						<b>PROJECTS</b>
+					</a>
+				</li>
+				<li>
+					<a href="./faq.html">
+						<b>FAQ</b>
+					</a>
+				</li>
+			</ul>
+		</div>
+
+		<div class="col-xs-11 col-sm-9 col-lg-9 contenuto">
+
+			<div class="row">
+				<div id="top" class="col-xs-9 col-xs-offset-2 col-sm-7 col-sm-offset-0 col-lg-7  col-lg-offset-0 ">
+					
+					<br>
+				</div>
+				<div class="col-sm-5 col-xs-9">
+					<div class="dropdown">
+						<button onclick="myFunction()" class="dropbtn">
+							<b>All Services</b>
+						</button>
+						<div id="myDropdown" class="dropdown-content">
+							
+						</div>
+					</div>
+				</div>
+			</div>
+			<script src="../assets/js/dropdown.js">  </script>
+
+			<br>
+
+			<p id="coco" class="testo"></p>
+			<br>
+
+			<div id="peopleee" class="row"></div>
+			<br>
+
+			<div id="text2"></div>
+
+			<div id="location" class="row"></div>
+			<br>
+
+			<h3>
+				<b>Contacts</b>
+			</h3>
+			<br>
+			<div id="contacts" class="row"></div>
+
+		</div>
+	</div>
+	<script src="https://polimi-hyp-2018-team-10428671.herokuapp.com/assets/js/service1.js"></script>
+	<div id="footer"></div>
+</body>
+
+</html>

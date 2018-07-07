@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Contacts</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" ></script>
+		<script src="//code.jquery.com/jquery-1.10.2.js"></script>
+		<link rel="stylesheet" type="text/css" href="../assets/css/index.css">
+		<script>
+		$(function(){
+				$("#header").load("./header.html");
+			});
+		</script>
+		<script>
+		$(function(){
+				$("#footer").load("./footer.html");
+			});
+		</script>
+	</head>
+
+	<body>
+		<div id="header"></div>
+		<div class="row">
+	     	<div id="side" class="col-xs-12 col-sm-2 col-lg-2">
+	          <ul id="sidebar" class="nav nav-stacked">
+				<li>
+					<a href="#">
+						<b>NEWS</b>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<b>EVENTS</b>
+					</a>
+				</li>
+				<li>
+					<a href="./projects.html">
+						<b>PROJECTS</b>
+					</a>
+				</li>
+				<li>
+					<a href="./faq.html">
+						<b>FAQ</b>
+					</a>
+				</li>
+	          </ul>
+		  	</div>
+
+			<div class="col-xs-11 col-sm-9 col-lg-9 contenuto">
+				<h1><b>Contact us</b></h1><br>
+				<h2><b>Useful Informations</b></h2><br>
+				<p class="testo">We are at your disposal to support you and for the information you want to request. Contact our offices, following the path that best suits your needs</p><br>
+
+			
+					
+				<div id="beta"  class="row"></div>
+	
+				<h2><b>Maps</b></h2><br>
+
+					<div id="map"></div>
+
+				<script src="../assets/js/maps.js"></script>
+
+				<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDIVsLi7UjtSeZvsNQfFs7UC1lAiP9UKD0&callback=myMap"></script><br><br>
+			
+				
+
+			</div>
+			
+	</div>
+	<script src="https://polimi-hyp-2018-team-10428671.herokuapp.com/assets/js/contacts.js"></script>
+	<div id="footer"></div>
+	</body>
+	</html>

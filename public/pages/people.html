@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>People</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="//code.jquery.com/jquery-1.10.2.js"></script>
+	<script script type="text/javascript" href="../../package.json"></script>
+	<link rel="stylesheet" type="text/css" href="../assets/css/index.css">
+	<script>
+		$(function(){
+			$("#header").load("./header.html");
+		});
+	</script>
+	<script>
+		$(function(){
+			$("#footer").load("./footer.html");
+		});
+	</script>
+	<script>
+		$.getJSON('package.json', function(data){
+			console.log(data);
+		} );
+	</script>
+</head>
+<body>
+	
+	<div id="header"></div>
+	<div class="row">
+	     	<div id="side" class="col-xs-12 col-sm-2 col-lg-2">
+	          <ul id="sidebar" class="nav nav-stacked">
+				<li>
+					<a href="#">
+						<b>NEWS</b>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<b>EVENTS</b>
+					</a>
+				</li>
+				<li>
+					<a href="./projects.html">
+						<b>PROJECTS</b>
+					</a>
+				</li>
+				<li>
+					<a href="./faq.html">
+						<b>FAQ</b>
+					</a>
+				</li>
+	          </ul>
+	        </div>
+		    <div class="col-xs-12 col-sm-9 col-md-9 col-lg-9 contenuto">
+	
+
+		    <div class="container">
+			<div class="row">
+				<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+					<h1><b>People</b></h1>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-3 col-lg-3">
+					<button class="bottonelat" type="button" id="roleBox" onclick="location.href='./people.html?sorting=role'">Order by Role</button>
+				</div>
+				<div class="col-xs-6 col-sm-3 col-md-3 col-lg-3">
+					<button class="bottonelat" type="button" id="alphaBox" onclick="location.href='./people.html?sorting=name'">Order by Alphabet</button>
+				</div>
+			</div>
+		    <div id="services">
+			
+			</div>
+		</div>
+	</div>
+		
+	</div>
+	
+	<div id="footer"></div>
+	
+	<script src="../assets/js/people.js"></script>
+</body>
+</html>
