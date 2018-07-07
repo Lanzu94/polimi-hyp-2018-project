@@ -1,0 +1,19 @@
+{
+  "name": "polimi-hyp-2018-project",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git clone https://polimi-hyp-2018-10428671@bitbucket.org/polimihyp2018team10428671/polimi-hyp-2018-project.git",
+  "author": "Joshua Nicolay Ortiz Osorio, Valentina Lanzuise, Simone Lazzaretti",
+  "engines": {
+    "node": "7.5.0"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "express": "4.15.2",
+    "lodash": "^4.17.10",
+    "pg": "^7.4.3"
+  },
+  "scripts": {
+    "start": "node ./index.js"
+  }
+}
